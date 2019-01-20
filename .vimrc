@@ -45,6 +45,8 @@ autocmd FileType nerdtree setlocal relativenumber
 au BufWinEnter * set number
 " yank to clipboard
 map <C-c> y:e ~/customclipboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
+" toggle dir tree
+map <silent> <C-t> :NERDTreeToggle<CR>
 
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
